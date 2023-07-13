@@ -20,20 +20,12 @@
             }
         }
 
-        $avatar = new Movie();
-        $avatar->title = 'Avatar';
-        $avatar->year = 2010;
-        $avatar->type = 'fantasy';
+        $avatar = new Movie('Avatar', 2010, 'fantasy');
         echo $avatar->getMovie();
-        var_dump($avatar);
 
-        $avengers = new Movie();
-        $avengers->title = 'Avengers endgame';
-        $avengers->year = 2019;
-        $avengers->type = 'fantasy';
-        echo $avengers-> getMovie();
-        var_dump($avengers);
 
+        $avengers = new Movie('Avengers', 2019, 'fantasy');
+        echo $avengers->getMovie();
 
 
 ?>
