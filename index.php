@@ -8,7 +8,7 @@
 
 
             function getMovie(){
-
+                return $this->title;
             }
         }
 
@@ -17,6 +17,6 @@
         $avatar->year = 2010;
         $avatar->type = 'fantasy';
         echo $avatar->getMovie();
-
+        var_dump($avatar);
 ?>
 
